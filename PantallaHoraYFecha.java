@@ -45,14 +45,15 @@ public class PantallaHoraYFecha{
             pantallaHoras.incrementaValorAlmacenado();
             if(pantallaHoras.getValorAlmacenado() == 0) {
                 pantallaDia.incrementaValorAlmacenado();
-                if(pantallaDia.getValorAlmacenado() == 0){
+                if(pantallaDia.getValorAlmacenado() == 1){
                     pantallaMes.incrementaValorAlmacenado();
-                    if(pantallaMes.getValorAlmacenado() == 0){
+                    if(pantallaMes.getValorAlmacenado() == 1){
                         pantallaAno.incrementaValorAlmacenado();
                     }
                 }
             }           
         }
+        
     }
     
     /**
